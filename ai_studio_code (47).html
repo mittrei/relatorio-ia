@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Prático de IA na LEADedu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        background-color: #f0f2f5;
+    }
+
+    .guide-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        background-color: #fff;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    /* --- ESTILOS DOS SLIDES INTRODUTÓRIOS --- */
+    .intro-slide {
+        padding: 0; /* Removido padding para a imagem preencher */
+        position: relative;
+    }
+    
+    .intro-slide img {
+        width: 100%;
+        height: auto;
+        display: block; /* Remove espaço extra abaixo da imagem */
+    }
+    
+    /* --- ESTILOS DO MAPA DE HABILIDADES --- */
+    .guide-header {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 25px 40px;
+        text-align: center;
+    }
+    .guide-header h1 {
+        font-size: 28px;
+        margin: 0;
+        font-weight: 600;
+    }
+    .column-titles {
+        display: grid;
+        grid-template-columns: 22% 38% 18% 22%;
+        padding: 20px 40px;
+        border-bottom: 2px solid #3A7BD5;
+        color: #3A7BD5;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: #fff;
+    }
+    .skill-category {
+        display: grid;
+        grid-template-columns: 22% 38% 18% 22%;
+        padding: 30px 40px;
+        border-bottom: 1px solid #e8e8e8;
+        align-items: center;
+        background-color: #fff;
+    }
+    .skill-category:nth-child(even) {
+        background-color: #f7f9fc;
+    }
+    .skill-category:last-child { border-bottom: none; }
+    .need-column { font-size: 20px; font-weight: 600; color: #333; padding-right: 20px; }
+    .usage-column ul { list-style-type: '✓  '; margin: 0; padding-left: 20px; color: #555; line-height: 1.9; }
+    
+    .tool-column ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .tool-column li a {
+        display: inline-block;
+        background-color: #eaf2fd;
+        color: #3A7BD5;
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+    .tool-column li a:hover {
+        background-color: #3A7BD5;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .people-column { display: flex; flex-direction: column; gap: 15px; }
+    .person { display: flex; align-items: center; }
+    .person img { 
+        width: 45px; 
+        height: 45px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        border: 2px solid #3A7BD5;
+        transition: transform 0.2s ease;
+    }
+    .person img:hover { transform: scale(1.1); }
+    .person span { margin-left: 15px; font-weight: 600; color: #444; text-transform: uppercase; }
+
+</style>
+</head>
+<body>
+
+<div class="guide-container">
+
+    <!-- INÍCIO DO MAPA DE HABILIDADES -->
+    <div class="guide-header">
+        <h1>Mapeando Nossas Habilidades em IA</h1>
+    </div>
+
+    <div class="column-titles">
+        <div>Se você precisa...</div>
+        <div>Usar a IA para...</div>
+        <div>Ferramenta</div>
+        <div>Pessoa que pode te ajudar</div>
+    </div>
+
+    <!-- CATEGORIA 1: Escrever e Comunicar Melhor -->
+    <div class="skill-category">
+        <div class="need-column">...escrever e comunicar melhor</div>
+        <div class="usage-column">
+            <ul>
+                <li>Rascunhar e revisar textos (e-mails, propostas, atas, etc.)</li>
+                <li>Ajustar o tom de uma mensagem para o cliente</li>
+                <li>Customizar um conteúdo para um público específico</li>
+                <li>Estruturar e redigir feedbacks construtivos</li>
+                <li>Melhorar e corrigir textos em outros idiomas</li>
+            </ul>
+        </div>
+        <div class="tool-column">
+            <ul>
+                <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+                <li><a href="https://gemini.google.com/" target="_blank">Gemini</a></li>
+                <li><a href="https://copilot.microsoft.com/" target="_blank">Copilot</a></li>
+                <li><a href="https://aistudio.google.com/" target="_blank">Studio</a></li>
+            </ul>
+        </div>
+        <div class="people-column">
+            <div class="person"><img src="https://i.imgur.com/fyFOMzU.jpeg" alt="Bruna"><span>Bruna A.</span></div>
+            <div class="person"><img src="https://i.imgur.com/RvOEswl.jpg" alt="Jeniffer"><span>Jeniffer S.</span></div>
+            <div class="person"><img src="https://i.imgur.com/4Kg9bDa.jpg" alt="Ana"><span>ana H.</span></div>
+            <div class="person"><img src="https://i.imgur.com/rTkibKN.jpg" alt="Fernanda"><span>Fernanda S.</span></div>
+            <div class="person"><img src="https://i.imgur.com/8F6xwRQ.jpg" alt="Tayhu"><span>tayhu O.</span></div>
+            <div class="person"><img src="https://i.imgur.com/bx4KPSC.jpg" alt="Vanessa"><span>vanessa M.</span></div>
+        </div>
+    </div>
+    
+    <!-- CATEGORIA 2: Ter Ideias e Ser Mais Criativo -->
+    <div class="skill-category">
+        <div class="need-column">...ter ideias e ser mais criativo</div>
+        <div class="usage-column">
+            <ul>
+                <li>Fazer brainstorming para campanhas, projetos e nomes</li>
+                <li>Criar roteiros detalhados para workshops e eventos</li>
+                <li>Desenvolver jogos, dinâmicas e analogias com propósito</li>
+                <li>Criar frases de impacto e conteúdos inspiracionais</li>
+            </ul>
+        </div>
+        <div class="tool-column">
+             <ul>
+                <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+                <li><a href="https://gemini.google.com/" target="_blank">Gemini</a></li>
+                <li><a href="https://claude.ai/" target="_blank">Claude</a></li>
+            </ul>
+        </div>
+        <div class="people-column">
+            <div class="person"><img src="https://i.imgur.com/dUmgpXO.jpg" alt="Tina"><span>Tina B.</span></div>
+            <div class="person"><img src="https://i.imgur.com/wEnaiGl.jpg" alt="Lisiane"><span>Lisiane O.</span></div>
+            <div class="person"><img src="https://i.imgur.com/hQCcYWw.jpg" alt="Vitoria"><span>Vitoria G.</span></div>
+            <div class="person"><img src="https://i.imgur.com/8F6xwRQ.jpg" alt="Tayhu"><span>tayhu O.</span></div>
+            <div class="person"><img src="https://i.imgur.com/RvOEswl.jpg" alt="Jeniffer"><span>Jeniffer S.</span></div>
+            <div class="person"><img src="https://i.imgur.com/rTkibKN.jpg" alt="Fernanda"><span>Fernanda S.</span></div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 3: Otimizar Reuniões e Áudios -->
+     <div class="skill-category">
+        <div class="need-column">...otimizar reuniões e áudios</div>
+        <div class="usage-column">
+            <ul>
+                <li>Transcrever reuniões para criar atas e pautas</li>
+                <li>Gerar listas de tarefas a partir de uma transcrição</li>
+                <li>Agilizar a criação de briefings para o cliente</li>
+                <li>Transcrever áudios avulsos (ex: WhatsApp)</li>
+            </ul>
+        </div>
+        <div class="tool-column">
+             <ul>
+                <li><a href="https://www.microsoft.com/pt-br/microsoft-teams/group-chat-software" target="_blank">Teams/Copilot</a></li>
+                <li><a href="https://tactiq.io/" target="_blank">Tactiq</a></li>
+                <li><a href="https://elevenlabs.io/" target="_blank">ElevenLabs</a></li>
+                <li><a href="https://aistudio.google.com/" target="_blank">Studio</a></li>
+            </ul>
+        </div>
+        <div class="people-column">
+            <div class="person"><img src="https://i.imgur.com/7UZGlne.jpg" alt="Pamela"><span>Pamela D.</span></div>
+            <div class="person"><img src="https://i.imgur.com/4Kg9bDa.jpg" alt="Ana"><span>ana H.</span></div>
+            <div class="person"><img src="https://i.imgur.com/lKhqM1G.jpg" alt="Cecilia"><span>cecilia C.</span></div>
+            <div class="person"><img src="https://i.imgur.com/rTkibKN.jpg" alt="Fernanda"><span>Fernanda S.</span></div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 4: Planejar e Organizar -->
+     <div class="skill-category">
+        <div class="need-column">...planejar e organizar</div>
+        <div class="usage-column">
+            <ul>
+                <li>Estruturar o planejamento de cursos e trilhas</li>
+                <li>Criar mapas mentais e fluxos de processos</li>
+                <li>Construir fórmulas complexas para planilhas</li>
+                <li>Planejar metas de desenvolvimento pessoal</li>
+            </ul>
+        </div>
+        <div class="tool-column">
+             <ul>
+                <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+                <li><a href="https://gemini.google.com/" target="_blank">Gemini</a></li>
+                <li><a href="https://napkin.one/" target="_blank">Napkin</a></li>
+                <li><a href="https://aistudio.google.com/" target="_blank">Studio</a></li>
+            </ul>
+        </div>
+        <div class="people-column">
+            <div class="person"><img src="https://i.imgur.com/dUmgpXO.jpg" alt="Tina"><span>Tina B.</span></div>
+            <div class="person"><img src="https://i.imgur.com/8F6xwRQ.jpg" alt="Tayhu"><span>tayhu O.</span></div>
+            <div class="person"><img src="https://i.imgur.com/fyFOMzU.jpeg" alt="Bruna"><span>Bruna A.</span></div>
+            <div class="person"><img src="https://i.imgur.com/RvOEswl.jpg" alt="Jeniffer"><span>Jeniffer S.</span></div>
+            <div class="person"><img src="https://i.imgur.com/rTkibKN.jpg" alt="Fernanda"><span>Fernanda S.</span></div>
+        </div>
+    </div>
+    
+    <!-- CATEGORIA 5: Criar Algo Visual -->
+     <div class="skill-category">
+        <div class="need-column">...criar algo visual</div>
+        <div class="usage-column">
+            <ul>
+                <li>Gerar uma primeira versão de apresentações (slides)</li>
+                <li>Criar posts e cards com sugestões de layout</li>
+                <li>Gerar imagens específicas que não existem em bancos</li>
+                <li>Apoiar na criação de dashboards (lógica e fórmulas)</li>
+            </ul>
+        </div>
+        <div class="tool-column">
+             <ul>
+                <li><a href="https://gamma.app/" target="_blank">Gamma</a></li>
+                <li><a href="https://tome.app/" target="_blank">Tome</a></li>
+                <li><a href="https://www.canva.com/" target="_blank">Canva IA</a></li>
+                <li><a href="https://www.freepik.com/ai/image-generator" target="_blank">Freepik IA</a></li>
+                <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+             </ul>
+        </div>
+        <div class="people-column">
+            <div class="person"><img src="https://i.imgur.com/fyFOMzU.jpeg" alt="Bruna"><span>Bruna A.</span></div>
+            <div class="person"><img src="https://i.imgur.com/rTkibKN.jpg" alt="Fernanda"><span>Fernanda S.</span></div>
+            <div class="person"><img src="https://i.imgur.com/2hYOfhP.jpg" alt="Leandra"><span>leandra J.</span></div>
+            <div class="person"><img src="https://i.imgur.com/8F6xwRQ.jpg" alt="Tayhu"><span>tayhu O.</span></div>
+        </div>
+    </div>
+
+    <!-- CATEGORIA 6: Analisar e Entender Informações -->
+     <div class="skill-category">
+        <div class="need-column">...analisar e entender informações</div>
+        <div class="usage-column">
+            <ul>
+                <li>Fazer uma síntese rápida de tendências de mercado</li>
+                <li>Analisar e interpretar dados de planilhas</li>
+                <li>Investigar a fundo um público ou persona</li>
+            </ul>
+        </div>
+        <div class="tool-column">
+             <ul>
+                <li><a href="https://www.perplexity.ai/" target="_blank">Perplexity</a></li>
+                <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+                <li><a href="https://gemini.google.com/" target="_blank">Gemini</a></li>
+            </ul>
+        </div>
+        <div class="people-column">
+            <div class="person"><img src="https://i.imgur.com/fyFOMzU.jpeg" alt="Bruna"><span>Bruna A.</span></div>
+            <div class="person"><img src="https://i.imgur.com/hQCcYWw.jpg" alt="Vitoria"><span>Vitoria G.</span></div>
+            <div class="person"><img src="https://i.imgur.com/RvOEswl.jpg" alt="Jeniffer"><span>Jeniffer S.</span></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
